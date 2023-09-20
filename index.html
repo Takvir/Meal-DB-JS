@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mead DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar bg-cyan-800">
+            <div class="container">
+                <div class="flex-1">
+                    <img class="logo-img" src="logo.png" alt="">
+                  </div>
+                  
+                  <div class="flex gap-2 justify-items-center">
+                    <div class="form-control">
+                      <input id="input-text" type="text" placeholder="Search" class="input input-bordered h-10 w-24 md:w-auto" />
+                    </div>
+                    <div><button id="search-btn" onclick="onClickSearch()" class="rounded-full bg-sky-100 p-2 px-8">Search</button></div>
+                  </div>
+            </div>
+           
+          </div>
+    </header>
+
+
+    <section>
+        <div class="container">
+            <div id="allFood" class="grid grid-cols-4 gap-4 mt-5 ">
+
+            </div>
+           
+        </div>
+    </section>
+<section>
+    <div id="meal-Details" class="w-50 mx-auto mb-4">
+    </div>
+</section>
+
+    <section>
+        <div class="container">
+            <div id="meals">
+                <div id="searchFood" class="grid grid-cols-4 gap-4 mt-5 ">
+
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+      <script src="mealdb.js"></script>
+</body>
+</html>
